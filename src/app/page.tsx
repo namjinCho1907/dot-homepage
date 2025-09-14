@@ -90,7 +90,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-center">
                 <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <img src="/linker-icon.png" alt="링커 앱 아이콘" className="w-10 h-10" />
+                  <img src="/linker-icon-white.png" alt="링커 앱 아이콘" className="w-10 h-10" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">데이팅 앱 &ldquo;링커&rdquo;</h3>
                 <p className="text-gray-600 mb-6">
