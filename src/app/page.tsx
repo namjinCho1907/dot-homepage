@@ -173,7 +173,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">주요 프로젝트</h3>
                   <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
-                    <h4 className="font-semibold text-gray-900 mb-2">AI 기반 데이팅 앱 "링커"</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">AI 기반 데이팅 앱 &ldquo;링커&rdquo;</h4>
                     <p className="text-gray-600 text-sm">
                       GPT 기술을 활용한 지능적인 매칭과 대화 기능을 제공하는 혁신적인 데이팅 플랫폼
                     </p>
