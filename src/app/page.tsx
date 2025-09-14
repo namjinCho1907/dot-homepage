@@ -89,17 +89,17 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-2xl">💕</span>
+                <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <img src="/linker-icon.png" alt="링커 앱 아이콘" className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">AI 기반 데이팅 앱 &ldquo;링커&rdquo;</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">데이팅 앱 &ldquo;링커&rdquo;</h3>
                 <p className="text-gray-600 mb-6">
-                  GPT 기술을 활용한 지능적인 매칭과 대화 기능을 제공하는 데이팅 플랫폼
+                  사용자 매칭과 실시간 채팅 기능을 제공하는 모바일 데이팅 플랫폼
                 </p>
                 <div className="flex flex-wrap justify-center gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Flutter</span>
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Boot</span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">OpenAI GPT</span>
+                  <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Firebase</span>
                   <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">MySQL</span>
                 </div>
               </div>
