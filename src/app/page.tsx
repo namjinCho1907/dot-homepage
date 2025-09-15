@@ -9,10 +9,11 @@ export default function Home() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">D</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Dot.</span>
+              <span className="text-xl font-bold text-gray-900">Dot</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">회사소개</a>
+              <a href="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors">개인정보처리방침</a>
             </div>
           </div>
         </nav>
@@ -116,7 +117,7 @@ export default function Home() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">D</span>
               </div>
-              <span className="text-xl font-bold">Dot.</span>
+              <span className="text-xl font-bold">Dot</span>
             </div>
             <div className="text-center space-y-2">
               <div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0 items-center justify-center text-gray-300 text-sm">
@@ -125,8 +126,10 @@ export default function Home() {
                 <a href="mailto:cnj1907@gmail.com" className="hover:text-white transition-colors">cnj1907@gmail.com</a>
                 <span className="hidden md:block">|</span>
                 <span>010-2473-3943</span>
+                <span className="hidden md:block">|</span>
+                <a href="/privacy" className="hover:text-white transition-colors">개인정보처리방침</a>
               </div>
-              <p className="text-gray-400 text-sm">© 2025 Dot. All rights reserved.</p>
+              <p className="text-gray-400 text-sm">© 2025 Dot All rights reserved.</p>
             </div>
           </div>
         </div>
