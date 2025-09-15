@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">회사소개</a>
-              <a href="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors">개인정보처리방침</a>
+              <a href="/linker/privacy" className="text-gray-700 hover:text-blue-600 transition-colors">링커 개인정보처리방침</a>
             </div>
           </div>
         </nav>
@@ -127,7 +127,7 @@ export default function Home() {
                 <span className="hidden md:block">|</span>
                 <span>010-2473-3943</span>
                 <span className="hidden md:block">|</span>
-                <a href="/privacy" className="hover:text-white transition-colors">개인정보처리방침</a>
+                <a href="/linker/privacy" className="hover:text-white transition-colors">링커 개인정보처리방침</a>
               </div>
               <p className="text-gray-400 text-sm">© 2025 Dot All rights reserved.</p>
             </div>
