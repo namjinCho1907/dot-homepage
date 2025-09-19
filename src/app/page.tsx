@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -91,9 +93,9 @@ export default function Home() {
             <div className="bg-gray-50 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-gray-100">
               <div className="text-center">
                 <div className="w-24 h-24 bg-white rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
-                  <img src="/linker-icon-pure-white.png" alt="링커 앱 아이콘" className="w-24 h-24 rounded-[20px]" />
+                  <Image src="/linker-icon-pure-white.png" alt="링커 앱 아이콘" width={96} height={96} className="w-24 h-24 rounded-[20px]" />
                 </div>
-                <h3 className="text-3xl font-medium text-black mb-6 tracking-tight">데이팅 앱 "링커"</h3>
+                <h3 className="text-3xl font-medium text-black mb-6 tracking-tight">데이팅 앱 &ldquo;링커&rdquo;</h3>
                 <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto font-light tracking-tight leading-relaxed">
                   사용자 매칭과 실시간 채팅 기능을 제공하는 모바일 데이팅 플랫폼
                 </p>
