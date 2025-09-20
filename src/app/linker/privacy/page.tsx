@@ -139,7 +139,95 @@ export default function Privacy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">10. 개인정보의 열람청구</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">10. 계정 및 개인정보 삭제 요청</h2>
+            <div className="space-y-6">
+              <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">📱 링커(Linker) 앱 계정 삭제 요청</h3>
+                <p className="text-blue-800 mb-4">
+                  <strong>개발자:</strong> Dot (남진 조)
+                </p>
+                <p className="text-blue-800 mb-4">
+                  사용자는 언제든지 계정 및 관련 개인정보의 삭제를 요청할 수 있습니다. 아래 절차에 따라 요청해 주세요.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">🔹 계정 삭제 요청 방법</h3>
+                <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+                  <div>
+                    <p className="font-medium text-gray-900">1️⃣ 이메일 문의</p>
+                    <ul className="ml-4 mt-2 space-y-1 text-gray-700">
+                      <li>• <strong>이메일 주소:</strong> privacy@welcometodot.com</li>
+                      <li>• <strong>제목:</strong> [링커 앱] 계정 삭제 요청</li>
+                      <li>• <strong>필수 포함 정보:</strong> 가입 시 사용한 전화번호</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900">2️⃣ 본인 확인</p>
+                    <p className="ml-4 text-gray-700">보안을 위해 가입 시 사용한 전화번호로 본인 확인을 진행합니다.</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900">3️⃣ 삭제 처리</p>
+                    <p className="ml-4 text-gray-700">본인 확인 완료 후 30일 이내에 계정 및 개인정보를 완전 삭제합니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">🔹 삭제되는 데이터 유형</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <h4 className="font-medium text-red-900 mb-2">✅ 즉시 삭제되는 데이터</h4>
+                    <ul className="text-red-800 space-y-1 text-sm">
+                      <li>• 개인정보 (전화번호, 닉네임)</li>
+                      <li>• 프로필 정보 및 사진</li>
+                      <li>• 현재 위치 정보</li>
+                      <li>• 채팅 메시지</li>
+                      <li>• 매칭 기록</li>
+                      <li>• 푸시 알림 토큰</li>
+                      <li>• 서비스 이용 기록</li>
+                    </ul>
+                  </div>
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <h4 className="font-medium text-amber-900 mb-2">⏰ 법정 보관 데이터</h4>
+                    <ul className="text-amber-800 space-y-1 text-sm">
+                      <li>• <strong>인앱결제 기록:</strong> 5년간 보관 (전자상거래법)</li>
+                      <li>• <strong>부정이용 기록:</strong> 1년간 보관 (정보통신망법)</li>
+                      <li>• <strong>서비스 이용 로그:</strong> 3개월간 보관 (통신비밀보호법)</li>
+                    </ul>
+                    <p className="text-amber-700 text-xs mt-2">
+                      ※ 법정 보관 데이터는 관련 법령에 따라 보관되며, 보관 기간 만료 시 자동 삭제됩니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">🔹 삭제 처리 기간</h3>
+                <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
+                  <ul className="text-green-800 space-y-2">
+                    <li>• <strong>요청 접수:</strong> 즉시 (이메일 수신 확인)</li>
+                    <li>• <strong>본인 확인:</strong> 1-3일 (전화번호 인증)</li>
+                    <li>• <strong>데이터 삭제:</strong> 본인 확인 후 30일 이내 완전 삭제</li>
+                    <li>• <strong>삭제 완료 통지:</strong> 삭제 완료 시 이메일로 알림</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-yellow-900 mb-2">⚠️ 중요 안내사항</h3>
+                <ul className="text-yellow-800 space-y-1">
+                  <li>• 계정 삭제 후에는 데이터 복구가 불가능합니다.</li>
+                  <li>• 삭제 요청 철회는 본인 확인 완료 전까지만 가능합니다.</li>
+                  <li>• 다른 사용자와의 채팅 기록은 상대방 계정에서는 유지될 수 있습니다.</li>
+                  <li>• 법적 의무로 보관하는 데이터는 해당 보관 기간 동안 안전하게 보관됩니다.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">11. 개인정보의 열람청구</h2>
             <p className="text-gray-700 leading-relaxed">
               정보주체는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 개인정보보호책임자에게 할 수 있습니다. 회사는 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.
             </p>
