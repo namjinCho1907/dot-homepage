@@ -8,7 +8,7 @@ export default function Terms() {
           <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">제1조 (목적)</h2>
             <p className="text-gray-700 leading-relaxed">
-              이 약관은 Dot(이하 "회사")이 제공하는 링커(Linker) 모바일 애플리케이션 및 관련 서비스(이하 "서비스")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+              이 약관은 Dot(이하 &ldquo;회사&rdquo;)이 제공하는 링커(Linker) 모바일 애플리케이션 및 관련 서비스(이하 &ldquo;서비스&rdquo;)의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
             </p>
           </section>
 
@@ -16,10 +16,10 @@ export default function Terms() {
             <h2 className="text-xl font-semibold text-gray-900 mb-4">제2조 (정의)</h2>
             <p className="text-gray-700 leading-relaxed mb-3">이 약관에서 사용하는 용어의 정의는 다음과 같습니다:</p>
             <ul className="ml-6 list-disc text-gray-700 space-y-2">
-              <li><strong>"서비스"</strong>란 회사가 제공하는 링커(Linker) 모바일 애플리케이션을 통한 소셜 매칭, 채팅, 위치 기반 서비스 등 일체의 서비스를 의미합니다.</li>
-              <li><strong>"이용자" 또는 "회원"</strong>이란 이 약관에 동의하고 회사와 서비스 이용계약을 체결한 개인을 의미합니다.</li>
-              <li><strong>"계정"</strong>이란 서비스 이용을 위해 이용자가 설정한 고유한 문자 또는 숫자의 조합을 의미합니다.</li>
-              <li><strong>"콘텐츠"</strong>란 서비스를 통해 이용자가 업로드, 전송, 게시하는 텍스트, 이미지, 영상, 음성 등의 정보를 의미합니다.</li>
+              <li><strong>&ldquo;서비스&rdquo;</strong>란 회사가 제공하는 링커(Linker) 모바일 애플리케이션을 통한 소셜 매칭, 채팅, 위치 기반 서비스 등 일체의 서비스를 의미합니다.</li>
+              <li><strong>&ldquo;이용자&rdquo; 또는 &ldquo;회원&rdquo;</strong>이란 이 약관에 동의하고 회사와 서비스 이용계약을 체결한 개인을 의미합니다.</li>
+              <li><strong>&ldquo;계정&rdquo;</strong>이란 서비스 이용을 위해 이용자가 설정한 고유한 문자 또는 숫자의 조합을 의미합니다.</li>
+              <li><strong>&ldquo;콘텐츠&rdquo;</strong>란 서비스를 통해 이용자가 업로드, 전송, 게시하는 텍스트, 이미지, 영상, 음성 등의 정보를 의미합니다.</li>
             </ul>
           </section>
 
