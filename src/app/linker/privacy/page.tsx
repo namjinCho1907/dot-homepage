@@ -176,9 +176,8 @@ export default function Privacy() {
         <div className="bg-white rounded-lg shadow-sm p-8 space-y-8">
           <section id="privacy-policy">
             <h1 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-200 pb-3">개인정보처리방침</h1>
-        
-        <div className="bg-white rounded-lg shadow-sm p-8 space-y-8">
-          <section>
+
+            <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">1. 개인정보의 처리 목적</h2>
             <p className="text-gray-700 leading-relaxed">
               Dot(&ldquo;회사&rdquo;)은 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
@@ -411,6 +410,7 @@ export default function Privacy() {
               시행일자: 2025년 9월 15일
             </p>
           </div>
+          </section>
         </div>
       </div>
     </div>
