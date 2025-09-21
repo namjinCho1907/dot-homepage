@@ -125,7 +125,7 @@ export default function Privacy() {
             <div className="bg-gray-50 p-4 rounded-lg">
               <div className="text-gray-700">
                 <p><strong>개인정보 보호책임자</strong></p>
-                <p>이메일: privacy@welcometodot.com</p>
+                <p>이메일: cnj1907@gmail.com</p>
                 <p>연락처: 010-2473-3943</p>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Privacy() {
                   <div>
                     <p className="font-medium text-gray-900">1️⃣ 이메일 문의</p>
                     <ul className="ml-4 mt-2 space-y-1 text-gray-700">
-                      <li>• <strong>이메일 주소:</strong> privacy@welcometodot.com</li>
+                      <li>• <strong>이메일 주소:</strong> cnj1907@gmail.com</li>
                       <li>• <strong>제목:</strong> [링커 앱] 계정 삭제 요청</li>
                       <li>• <strong>필수 포함 정보:</strong> 가입 시 사용한 전화번호</li>
                     </ul>
