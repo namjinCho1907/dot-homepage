@@ -7,11 +7,8 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
         <nav className="container mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-black rounded-[30px] flex items-center justify-center">
-                <span className="text-white font-semibold text-lg tracking-tight">D</span>
-              </div>
-              <span className="text-2xl font-medium text-black tracking-tight">Dot</span>
+            <div className="flex items-center">
+              <span className="text-2xl font-medium text-black tracking-tight">Dot.</span>
             </div>
             <div className="hidden md:flex items-center space-x-10">
               <a href="#about" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">회사소개</a>
@@ -26,14 +23,10 @@ export default function Home() {
         <div className="container mx-auto px-8">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-6xl md:text-7xl font-medium text-black mb-8 tracking-tight leading-tight">
-              기술로
-              <br />
-              <span className="text-[#FF7D29]">
-                더 나은 세상을
-              </span>
+              Dot.
             </h1>
             <p className="text-xl md:text-2xl text-gray-500 mb-16 max-w-3xl mx-auto font-light tracking-tight leading-relaxed">
-              Dot은 사용자에게 의미 있는 기술 솔루션을 제공하는 회사입니다.
+              점들을 이어주다.
             </p>
           </div>
         </div>
@@ -45,7 +38,7 @@ export default function Home() {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-medium text-black mb-6 tracking-tight">회사 소개</h2>
             <p className="text-xl text-gray-500 max-w-3xl mx-auto font-light tracking-tight leading-relaxed">
-              Dot은 사용자 중심의 기술 솔루션을 개발하는 회사입니다.
+              사람과 사람을 이어주는 서비스를 제공합니다.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -115,15 +108,12 @@ export default function Home() {
       <footer className="bg-black text-white py-20">
         <div className="container mx-auto px-8">
           <div className="text-center space-y-8">
-            <div className="flex items-center justify-center space-x-3">
-              <div className="w-12 h-12 bg-white rounded-[30px] flex items-center justify-center">
-                <span className="text-black font-semibold text-xl tracking-tight">D</span>
-              </div>
-              <span className="text-3xl font-medium tracking-tight">Dot</span>
+            <div className="flex items-center justify-center">
+              <span className="text-3xl font-medium tracking-tight">Dot.</span>
             </div>
             <div className="space-y-6">
               <div className="flex flex-col md:flex-row md:space-x-8 space-y-3 md:space-y-0 items-center justify-center text-gray-300 text-lg">
-                <span className="font-light tracking-tight">조남진</span>
+                <span className="font-light tracking-tight">대표: 조남진</span>
                 <span className="hidden md:block text-gray-500">·</span>
                 <a href="mailto:cnj1907@gmail.com" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">cnj1907@gmail.com</a>
                 <span className="hidden md:block text-gray-500">·</span>
