@@ -1,6 +1,25 @@
+'use client';
+
 import Image from 'next/image';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
+  const [isLinkerDropdownOpen, setIsLinkerDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // 드롭다운 외부 클릭 시 닫기
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsLinkerDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -12,8 +31,45 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-10">
               <a href="#about" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">회사소개</a>
-              <a href="/linker/child-safety" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">아동안전정책</a>
-              <a href="/linker/privacy" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">개인정보처리방침</a>
+              
+              {/* 링커 드롭다운 */}
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsLinkerDropdownOpen(!isLinkerDropdownOpen)}
+                  className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight flex items-center"
+                >
+                  링커
+                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isLinkerDropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+                    <a
+                      href="/linker/terms"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                      onClick={() => setIsLinkerDropdownOpen(false)}
+                    >
+                      이용약관
+                    </a>
+                    <a
+                      href="/linker/privacy"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                      onClick={() => setIsLinkerDropdownOpen(false)}
+                    >
+                      개인정보처리방침
+                    </a>
+                    <a
+                      href="/linker/child-safety"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                      onClick={() => setIsLinkerDropdownOpen(false)}
+                    >
+                      아동안전정책
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </nav>
