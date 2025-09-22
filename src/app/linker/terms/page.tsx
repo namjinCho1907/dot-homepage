@@ -1,6 +1,50 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function Terms() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 py-12">
+      {/* 상단 네비게이션 */}
+      <div className="fixed top-4 right-4 z-50">
+        <div className="relative">
+          <button
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            className="bg-white border border-gray-200 rounded-lg px-4 py-2 shadow-sm hover:shadow-md transition-all duration-200 font-medium text-gray-700"
+          >
+            링커 📋
+          </button>
+          
+          {isDropdownOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+              <a
+                href="/linker/privacy"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                개인정보처리방침
+              </a>
+              <a
+                href="/linker/terms"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                이용약관
+              </a>
+              <a
+                href="/linker/child-safety"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                아동안전정책
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">링커(Linker) 서비스 이용약관</h1>
 

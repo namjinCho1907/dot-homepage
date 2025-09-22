@@ -12,6 +12,7 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-10">
               <a href="#about" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">회사소개</a>
+              <a href="/linker/child-safety" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">아동안전정책</a>
               <a href="/linker/privacy" className="text-gray-600 hover:text-black transition-all duration-300 font-medium tracking-tight">개인정보처리방침</a>
             </div>
           </div>
@@ -118,6 +119,8 @@ export default function Home() {
                 <a href="mailto:cnj1907@gmail.com" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">cnj1907@gmail.com</a>
                 <span className="hidden md:block text-gray-500">·</span>
                 <span className="font-light tracking-tight">010-2473-3943</span>
+                <span className="hidden md:block text-gray-500">·</span>
+                <a href="/linker/child-safety" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">링커 아동안전정책</a>
                 <span className="hidden md:block text-gray-500">·</span>
                 <a href="/linker/privacy" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">링커 개인정보처리방침</a>
               </div>
