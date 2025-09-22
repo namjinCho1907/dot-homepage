@@ -26,7 +26,7 @@ export default function Home() {
               Dot.
             </h1>
             <p className="text-xl md:text-2xl text-gray-500 mb-16 max-w-3xl mx-auto font-light tracking-tight leading-relaxed">
-              점들을 이어주다.
+              점과 점을 잇다.
             </p>
           </div>
         </div>
