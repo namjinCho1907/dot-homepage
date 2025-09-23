@@ -79,7 +79,7 @@ export default function Home() {
       <section className="pt-40 pb-32">
         <div className="container mx-auto px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-6xl md:text-7xl font-medium text-white mb-8 tracking-tight leading-tight">
+            <h1 className="text-6xl md:text-7xl font-thin text-white mb-8 tracking-tight leading-tight">
               Dot.
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto font-light tracking-tight leading-relaxed">
