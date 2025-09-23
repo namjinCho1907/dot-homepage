@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 bg-gray-900">
+      <section id="about" className="py-32 bg-black">
         <div className="container mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-medium text-white mb-6 tracking-tight">회사 소개</h2>
