@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
   const [isLinkerDropdownOpen, setIsLinkerDropdownOpen] = useState(false);
@@ -21,6 +22,15 @@ export default function Home() {
     };
   }, []);
   return (
+    <>
+      <Head>
+        <title>Dot.</title>
+        <meta name="description" content="점과 점을 잇다. Dot은 사람과 사람을 이어주는 서비스를 제공합니다." />
+        <meta property="og:title" content="Dot." />
+        <meta property="og:description" content="점과 점을 잇다. Dot은 사람과 사람을 이어주는 서비스를 제공합니다." />
+        <meta property="og:url" content="https://welcometodot.com" />
+        <meta property="og:type" content="website" />
+      </Head>
     <div className="min-h-screen bg-black">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm">
@@ -186,5 +196,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
