@@ -179,16 +179,10 @@ export default function Home() {
               <span className="text-3xl font-medium tracking-tight">Dot.</span>
             </div>
             <div className="space-y-6">
-              <div className="flex flex-col md:flex-row md:space-x-8 space-y-3 md:space-y-0 items-center justify-center text-gray-300 text-lg">
-                <span className="font-light tracking-tight">대표: 조남진</span>
-                <span className="hidden md:block text-gray-600">·</span>
+              <div className="flex flex-col space-y-3 items-center justify-center text-gray-300 text-lg">
+                <span className="font-light tracking-tight">대표 조남진</span>
                 <a href="mailto:cnj1907@gmail.com" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">cnj1907@gmail.com</a>
-                <span className="hidden md:block text-gray-600">·</span>
                 <span className="font-light tracking-tight">010-2473-3943</span>
-                <span className="hidden md:block text-gray-600">·</span>
-                <a href="/linker/child-safety" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">링커 아동안전정책</a>
-                <span className="hidden md:block text-gray-600">·</span>
-                <a href="/linker/privacy" className="hover:text-[#FF7D29] transition-colors font-light tracking-tight">링커 개인정보처리방침</a>
               </div>
               <p className="text-gray-400 text-sm font-light tracking-tight">© 2025 Dot All rights reserved.</p>
             </div>
