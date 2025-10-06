@@ -149,13 +149,34 @@ export default function Home() {
               Dot에서 개발한 프로젝트를 소개합니다.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            {/* WelcomeU 프로젝트 */}
+            <div className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-blue-700/50">
+              <div className="text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
+                  <span className="text-5xl">🌏</span>
+                </div>
+                <h3 className="text-3xl font-medium text-white mb-6 tracking-tight">WelcomeU</h3>
+                <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light tracking-tight leading-relaxed">
+                  재한 외국인을 위한 커뮤니티 플랫폼. 실시간 채팅, 게시판, 지역 참여 프로그램 등을 제공합니다.
+                </p>
+                <div className="flex flex-wrap justify-center gap-3">
+                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Flutter</span>
+                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Django</span>
+                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">PostgreSQL</span>
+                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">WebSocket</span>
+                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Firebase</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 링커 프로젝트 */}
             <div className="bg-gray-800 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-gray-700">
               <div className="text-center">
                 <div className="w-24 h-24 bg-gray-700 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
                   <Image src="/linker-icon-pure-white.png" alt="링커 앱 아이콘" width={96} height={96} className="w-24 h-24 rounded-[20px]" />
                 </div>
-                <h3 className="text-3xl font-medium text-white mb-6 tracking-tight">데이팅 앱 &ldquo;링커&rdquo;</h3>
+                <h3 className="text-3xl font-medium text-white mb-6 tracking-tight">링커</h3>
                 <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light tracking-tight leading-relaxed">
                   사용자 매칭과 실시간 채팅 기능을 제공하는 모바일 데이팅 플랫폼
                 </p>
