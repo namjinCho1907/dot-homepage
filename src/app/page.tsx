@@ -121,11 +121,11 @@ export default function Home() {
                   외국인 커뮤니티 플랫폼
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
-                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Flutter</span>
-                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Django</span>
-                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">PostgreSQL</span>
-                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">WebSocket</span>
-                  <span className="px-5 py-2 bg-blue-600/30 text-blue-200 text-sm rounded-[30px] border border-blue-500/50 font-medium tracking-tight">Firebase</span>
+                  <span className="px-5 py-2 bg-gray-700 text-gray-300 text-sm rounded-[30px] border border-gray-600 font-medium tracking-tight">Flutter</span>
+                  <span className="px-5 py-2 bg-gray-700 text-gray-300 text-sm rounded-[30px] border border-gray-600 font-medium tracking-tight">Django</span>
+                  <span className="px-5 py-2 bg-gray-700 text-gray-300 text-sm rounded-[30px] border border-gray-600 font-medium tracking-tight">PostgreSQL</span>
+                  <span className="px-5 py-2 bg-gray-700 text-gray-300 text-sm rounded-[30px] border border-gray-600 font-medium tracking-tight">WebSocket</span>
+                  <span className="px-5 py-2 bg-gray-700 text-gray-300 text-sm rounded-[30px] border border-gray-600 font-medium tracking-tight">Firebase</span>
                 </div>
               </div>
             </div>
