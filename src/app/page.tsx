@@ -2,8 +2,26 @@
 
 import Image from 'next/image';
 import Head from 'next/head';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
+  const [isWelcomeuDropdownOpen, setIsWelcomeuDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // 드롭다운 외부 클릭 시 닫기
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsWelcomeuDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -24,6 +42,45 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-10">
               <a href="#about" className="text-gray-300 hover:text-white transition-all duration-300 font-medium tracking-tight">회사소개</a>
+
+              {/* WelcomeU 드롭다운 */}
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsWelcomeuDropdownOpen(!isWelcomeuDropdownOpen)}
+                  className="text-gray-300 hover:text-white transition-all duration-300 font-medium tracking-tight flex items-center"
+                >
+                  WelcomeU
+                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {isWelcomeuDropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+                    <a
+                      href="/welcomeu/privacy"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                      onClick={() => setIsWelcomeuDropdownOpen(false)}
+                    >
+                      개인정보처리방침
+                    </a>
+                    <a
+                      href="/welcomeu/terms"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
+                      onClick={() => setIsWelcomeuDropdownOpen(false)}
+                    >
+                      이용약관
+                    </a>
+                    <a
+                      href="/welcomeu/child-safety"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                      onClick={() => setIsWelcomeuDropdownOpen(false)}
+                    >
+                      아동 안전 표준
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </nav>
