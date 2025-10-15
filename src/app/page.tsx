@@ -1,26 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
-  const [isLinkerDropdownOpen, setIsLinkerDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // 드롭다운 외부 클릭 시 닫기
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsLinkerDropdownOpen(false);
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
   return (
     <>
       <Head>
@@ -41,45 +24,6 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-10">
               <a href="#about" className="text-gray-300 hover:text-white transition-all duration-300 font-medium tracking-tight">회사소개</a>
-              
-              {/* 링커 드롭다운 */}
-              <div className="relative" ref={dropdownRef}>
-                <button
-                  onClick={() => setIsLinkerDropdownOpen(!isLinkerDropdownOpen)}
-                  className="text-gray-300 hover:text-white transition-all duration-300 font-medium tracking-tight flex items-center"
-                >
-                  링커
-                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {isLinkerDropdownOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
-                    <a
-                      href="/linker/terms"
-                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
-                      onClick={() => setIsLinkerDropdownOpen(false)}
-                    >
-                      이용약관
-                    </a>
-                    <a
-                      href="/linker/privacy"
-                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
-                      onClick={() => setIsLinkerDropdownOpen(false)}
-                    >
-                      개인정보처리방침
-                    </a>
-                    <a
-                      href="/linker/child-safety"
-                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
-                      onClick={() => setIsLinkerDropdownOpen(false)}
-                    >
-                      아동안전정책
-                    </a>
-                  </div>
-                )}
-              </div>
             </div>
           </div>
         </nav>
@@ -92,9 +36,6 @@ export default function Home() {
             <h1 className="text-6xl md:text-7xl font-thin text-white mb-8 tracking-tight leading-tight">
               Dot.
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto font-light tracking-tight leading-relaxed">
-              점과 점을 잇다.
-            </p>
           </div>
         </div>
       </section>
@@ -111,9 +52,9 @@ export default function Home() {
           </div>
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             {/* WelcomeU 프로젝트 */}
-            <div className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-blue-700/50">
+            <div className="bg-gray-800 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-gray-700">
               <div className="text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
+                <div className="w-24 h-24 bg-gray-700 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
                   <span className="text-5xl">🌏</span>
                 </div>
                 <h3 className="text-3xl font-medium text-white mb-6 tracking-tight">WelcomeU</h3>
@@ -133,8 +74,8 @@ export default function Home() {
             {/* 링커 프로젝트 */}
             <div className="bg-gray-800 p-12 rounded-[30px] hover:shadow-2xl transition-all duration-500 border border-gray-700">
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-700 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg">
-                  <Image src="/linker-icon-pure-white.png" alt="링커 앱 아이콘" width={96} height={96} className="w-24 h-24 rounded-[20px]" />
+                <div className="w-24 h-24 rounded-[30px] flex items-center justify-center mx-auto mb-8 shadow-lg overflow-hidden">
+                  <Image src="/linker_icon.png" alt="링커 앱 아이콘" width={96} height={96} className="w-24 h-24 object-cover" />
                 </div>
                 <h3 className="text-3xl font-medium text-white mb-6 tracking-tight">링커</h3>
                 <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light tracking-tight leading-relaxed">
