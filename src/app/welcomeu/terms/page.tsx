@@ -28,10 +28,17 @@ export default function WelcomeUTerms() {
               </a>
               <a
                 href="/welcomeu/terms"
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors border-b border-gray-100"
                 onClick={() => setIsDropdownOpen(false)}
               >
                 이용약관
+              </a>
+              <a
+                href="/welcomeu/child-safety"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                아동 안전 표준
               </a>
             </div>
           )}
