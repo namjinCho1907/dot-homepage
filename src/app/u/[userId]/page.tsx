@@ -18,12 +18,23 @@ export default function UserProfilePage() {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [countryCode, setCountryCode] = useState('kr'); // 기본값 한국
 
   useEffect(() => {
     // 모바일 기기 감지
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     const isAndroid = /Android/i.test(navigator.userAgent);
+
+    // 사용자 국가 코드 감지 (브라우저 언어 설정에서)
+    const getCountryCode = () => {
+      const locale = navigator.language || navigator.languages?.[0] || 'en-US';
+      const code = locale.split('-')[1]?.toLowerCase() || 'kr'; // 기본값 한국
+      return code;
+    };
+
+    const detectedCountryCode = getCountryCode();
+    setCountryCode(detectedCountryCode);
 
     // 프로필 데이터 로드
     const fetchProfile = async () => {
@@ -43,8 +54,10 @@ export default function UserProfilePage() {
           // 2초 후에도 페이지에 있으면 앱스토어로 이동
           setTimeout(() => {
             if (isIOS) {
-              window.location.href = 'https://apps.apple.com/app/welcomeu/id6738838152';
+              // 사용자 국가에 맞는 앱스토어 링크
+              window.location.href = `https://apps.apple.com/${detectedCountryCode}/app/welcomeu/id6738838152`;
             } else if (isAndroid) {
+              // Google Play는 자동으로 국가 감지
               window.location.href = 'https://play.google.com/store/apps/details?id=com.namjin.welcomeuApp';
             }
           }, 2000);
@@ -134,7 +147,7 @@ export default function UserProfilePage() {
         {/* 앱 다운로드 버튼 */}
         <div className="space-y-3">
           <a
-            href="https://apps.apple.com/app/welcomeu/id6738838152"
+            href={`https://apps.apple.com/${countryCode}/app/welcomeu/id6738838152`}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-black text-white py-4 px-6 rounded-xl font-semibold text-center hover:bg-gray-800 transition-colors"
