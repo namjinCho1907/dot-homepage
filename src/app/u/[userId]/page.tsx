@@ -55,7 +55,7 @@ export default function UserProfilePage() {
           setTimeout(() => {
             if (isIOS) {
               // 사용자 국가에 맞는 앱스토어 링크
-              window.location.href = `https://apps.apple.com/${detectedCountryCode}/app/welcomeu/id6738838152`;
+              window.location.href = `https://apps.apple.com/${detectedCountryCode}/app/welcomeu/id6753156461`;
             } else if (isAndroid) {
               // Google Play는 자동으로 국가 감지
               window.location.href = 'https://play.google.com/store/apps/details?id=com.namjin.welcomeuApp';
@@ -147,7 +147,7 @@ export default function UserProfilePage() {
         {/* 앱 다운로드 버튼 */}
         <div className="space-y-3">
           <a
-            href={`https://apps.apple.com/${countryCode}/app/welcomeu/id6738838152`}
+            href={`https://apps.apple.com/${countryCode}/app/welcomeu/id6753156461`}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-black text-white py-4 px-6 rounded-xl font-semibold text-center hover:bg-gray-800 transition-colors"
