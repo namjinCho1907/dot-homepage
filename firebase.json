@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "run": {
+          "serviceId": "welcomeu-api",
+          "region": "asia-northeast3"
+        }
+      },
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "dot-homepage",
+          "region": "asia-northeast3"
+        }
+      }
+    ]
+  }
+}

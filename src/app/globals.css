@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* WelcomeU Design System - Black & White Minimalism */
+  /* Primary Colors */
+  --primary: #000000;
+  --primary-light: #2C2C2C;
+  --primary-soft: #FAFAFA;
+
+  /* Surface & Background */
+  --surface: #FFFFFF;
+  --background: #FAFAFA;
+
+  /* Text Colors */
+  --text-primary: #000000;
+  --text-secondary: #737373;
+  --text-light: #A3A3A3;
+  --text-hint: #D4D4D4;
+
+  /* Functional Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  /* Chat Colors */
+  --my-message: #000000;
+  --other-message: #F5F5F5;
+
+  /* UI Elements */
+  --divider: #F0F0F0;
+  --border: #E5E5E5;
+  --card-shadow: rgba(0, 0, 0, 0.02);
+
+  /* Button Colors */
+  --button-primary: #000000;
+  --button-secondary: #FFFFFF;
+  --button-disabled: #F5F5F5;
+
+  /* Icon Colors */
+  --icon-primary: #000000;
+  --icon-secondary: #737373;
+  --icon-inactive: #D4D4D4;
+
+  /* State Colors */
+  --active-bg: #FAFAFA;
+  --inactive-bg: #FFFFFF;
+  --pressed-bg: #F5F5F5;
 }
 
 @theme inline {
+  /* Custom color palette for Tailwind */
+  --color-primary: var(--primary);
+  --color-surface: var(--surface);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Hide Next.js Dev Indicator */
+#__next-build-indicator,
+#__next-build-watcher,
+nextjs-portal {
+  display: none !important;
 }

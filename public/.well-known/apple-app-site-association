@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "UFMZ22L73N.com.namjin.welcomeuApp",
+        "paths": [
+          "/u/*"
+        ]
+      }
+    ]
+  }
+}
