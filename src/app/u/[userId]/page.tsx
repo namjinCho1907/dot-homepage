@@ -45,9 +45,9 @@ export default function UserProfilePage() {
         setProfile(data);
         setLoading(false);
 
-        // 모바일이면 앱 딥링크 시도
+        // 모바일이면 앱 딥링크 시도 (share_code 사용)
         if (isMobile) {
-          // 딥링크 시도
+          // 딥링크 시도 - share_code 또는 user_id 사용
           const deepLink = `welcomeu://u/${userId}`;
           window.location.href = deepLink;
 
