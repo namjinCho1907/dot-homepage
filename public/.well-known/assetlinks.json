@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.namjin.welcomeuApp",
+      "sha256_cert_fingerprints": [
+        "08:03:B8:5B:29:8B:3C:40:46:40:E4:8B:9D:C1:19:08:C6:A2:FF:17:FD:88:04:E5:B1:6C:C3:34:04:79:3A:89"
+      ]
+    }
+  }
+]
