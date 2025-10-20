@@ -38,7 +38,6 @@ export default function Home() {
         <nav className="container mx-auto px-8 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <span className="text-3xl">🌏</span>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">WelcomeU</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -102,17 +101,17 @@ export default function Home() {
                   만나보세요
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  한국 생활의 모든 순간을 함께하는 외국인 커뮤니티 플랫폼입니다.
+                  한국 생활의 모든 순간을 함께하는 외국인 커뮤니티 플랫폼입니다.<br/>
                   정보를 공유하고, 친구를 만들고, 함께 활동하세요.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a href="#" className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <a href="https://apps.apple.com/es/app/welcomeu/id6753156461?uo=2" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
                     <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
                     </svg>
                     App Store
                   </a>
-                  <a href="#" className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <a href="https://play.google.com/store/apps/details?id=com.namjin.welcomeuApp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
                     <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
@@ -121,16 +120,53 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative">
-                <div className="relative z-10">
-                  <div className="w-full h-[600px] bg-gradient-to-br from-blue-500 to-purple-600 rounded-[40px] shadow-2xl flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <div className="text-8xl mb-4">🌏</div>
-                      <p className="text-2xl font-semibold">앱 스크린샷</p>
-                    </div>
+                {/* 스크린샷 4개를 나란히 표시 */}
+                <div className="flex justify-center items-center gap-3 flex-wrap">
+                  <div className="transform hover:scale-105 transition-all duration-300">
+                    <Image
+                      src="/screenshots/screenshot-1.png"
+                      alt="WelcomeU 앱 스크린샷 1"
+                      width={180}
+                      height={389}
+                      className="rounded-[30px] shadow-2xl"
+                      unoptimized
+                      priority
+                    />
+                  </div>
+                  <div className="transform hover:scale-105 transition-all duration-300">
+                    <Image
+                      src="/screenshots/screenshot-2.png"
+                      alt="WelcomeU 앱 스크린샷 2"
+                      width={180}
+                      height={389}
+                      className="rounded-[30px] shadow-2xl"
+                      unoptimized
+                      priority
+                    />
+                  </div>
+                  <div className="transform hover:scale-105 transition-all duration-300">
+                    <Image
+                      src="/screenshots/screenshot-3.png"
+                      alt="WelcomeU 앱 스크린샷 3"
+                      width={180}
+                      height={389}
+                      className="rounded-[30px] shadow-2xl"
+                      unoptimized
+                      priority
+                    />
+                  </div>
+                  <div className="transform hover:scale-105 transition-all duration-300">
+                    <Image
+                      src="/screenshots/screenshot-4.png"
+                      alt="WelcomeU 앱 스크린샷 4"
+                      width={180}
+                      height={389}
+                      className="rounded-[30px] shadow-2xl"
+                      unoptimized
+                      priority
+                    />
                   </div>
                 </div>
-                <div className="absolute -z-10 top-10 left-10 w-full h-full bg-blue-200 rounded-[40px] opacity-30"></div>
-                <div className="absolute -z-20 top-20 left-20 w-full h-full bg-purple-200 rounded-[40px] opacity-20"></div>
               </div>
             </div>
           </div>
@@ -217,26 +253,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 text-center text-white">
-            <div>
-              <div className="text-5xl font-bold mb-2">1,000+</div>
-              <div className="text-xl opacity-90">활성 사용자</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">5,000+</div>
-              <div className="text-xl opacity-90">게시글</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">9개</div>
-              <div className="text-xl opacity-90">지원 언어</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-8">
@@ -248,13 +264,13 @@ export default function Home() {
               WelcomeU와 함께 한국에서의 새로운 생활을 시작해보세요
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="#" className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold">
+              <a href="https://apps.apple.com/es/app/welcomeu/id6753156461?uo=2" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold">
                 <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
                 </svg>
                 App Store
               </a>
-              <a href="#" className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold">
+              <a href="https://play.google.com/store/apps/details?id=com.namjin.welcomeuApp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-lg font-semibold">
                 <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                 </svg>
@@ -272,7 +288,6 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 mb-12">
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <span className="text-3xl">🌏</span>
                   <span className="text-2xl font-bold">WelcomeU</span>
                 </div>
                 <p className="text-gray-400 mb-6">

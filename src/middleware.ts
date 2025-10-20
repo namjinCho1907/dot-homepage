@@ -6,7 +6,7 @@ export default function middleware(request: NextRequest) {
   console.log('[middleware.ts] Request pathname:', pathname);
 
   // Dot 홈페이지 경로는 middleware 적용 안함
-  if (pathname === '/' || pathname.startsWith('/linker') || pathname.startsWith('/welcomeu') || pathname.startsWith('/u/') || pathname.startsWith('/app')) {
+  if (pathname === '/' || pathname === '/about' || pathname.startsWith('/linker') || pathname.startsWith('/welcomeu') || pathname.startsWith('/u/') || pathname.startsWith('/app')) {
     console.log('[middleware.ts] Skipping intl for Dot homepage');
     return NextResponse.next();
   }
